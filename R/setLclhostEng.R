@@ -2,7 +2,7 @@ library(httr)
 #' Set noproxy localhost and environment to english
 #'
 #' This function sets localhost to noproxy and sys enviroment to english.
-#' @param http_msg Want to see localhost http msgs? Defaults to FALSE (don't show msgs).
+#' @param http_msg Want to see localhost http msgs? Defaults to FALSE [don't show msgs].
 #' @keywords localhost_english
 #' @export
 #' @examples
