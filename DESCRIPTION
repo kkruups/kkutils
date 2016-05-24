@@ -1,10 +1,12 @@
 Package: kkutils
 Title: Sets localhost to noproxy and system environment to english
 Version: 0.0.0.9000
-Authors@R: person("K", "Kruup", email = "kkruups@example.com", role = c("aut", "cre"))
+Authors@R: person("K", "Kruups", email = "kkruups@private.com", role = c("aut", "cre"))
 Description: Sets localhost to noproxy and system environment to english.
 Depends:
     R (>= 3.2.4)
 License: GPL
 LazyData: true
 RoxygenNote: 5.0.1.9000
+Imports: httr
+
