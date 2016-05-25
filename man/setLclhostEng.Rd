@@ -7,7 +7,7 @@
 setLclhostEng(http_msg = FALSE)
 }
 \arguments{
-\item{http_msg}{Want to see localhost http msgs? Defaults to FALSE (don't show msgs).}
+\item{http_msg}{Want to see localhost http msgs? Defaults to FALSE [don't show msgs].}
 }
 \description{
 This function sets localhost to noproxy and sys enviroment to english.

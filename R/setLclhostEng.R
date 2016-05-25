@@ -1,4 +1,3 @@
-library(httr)
 #' Set noproxy localhost and environment to english
 #'
 #' This function sets localhost to noproxy and sys enviroment to english.
@@ -13,14 +12,19 @@ library(httr)
 setLclhostEng <- function(http_msg = FALSE){
   Sys.setenv(LANG = "eng")
 
+  if (!requireNamespace("httr", quietly = FALSE)) {
+    stop("Pkg \"httr\" needed for this function to work. Please install it.",
+         call. = TRUE)
+  }
+
   if ( !http_msg ) {
-    set_config(verbose(data_out = http_msg))
+    httr::set_config(httr::verbose(data_out = http_msg))
     cat("Http Messaging Off\n")
 
   }else{
-    set_config(verbose())
+    httr::set_config(httr::verbose())
     cat("Set Http Messaging On\n")
   }
-   set_config(config(noproxy = "localhost"))
+  httr::set_config(httr::config(noproxy = "localhost"))
     cat("Set localhost to noproxy")
 }
